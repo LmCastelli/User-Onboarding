@@ -23,7 +23,9 @@ const initialFormErrors = {
   
 }
 
-const userList = [];
+const userList = [
+  {first_name: "bob", last_name: "bobby", email: "bob@bob.com", password: "no way", service: true}
+];
 const initialDisabled = true;
 
 function App() {
@@ -93,6 +95,22 @@ function App() {
         errors={formErrors}
       />
       
+      {
+        users.map(user => {
+          return (
+            <div>
+              First Name:{user.first_name} <br/>
+              Last Name:{user.last_name}  <br/>
+              Email:{user.email}      <br/>
+              Password??{user.password}   <br/>
+              Do you agree to service: {user.service === true ? "Yes" : "No"}     <br/>
+            
+            </div>
+            
+          )
+        })
+      }
+
     </div>
   );
 }

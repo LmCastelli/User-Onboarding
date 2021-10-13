@@ -17,11 +17,11 @@ const formSchema = yup.object().shape({
         .required("email is required"),
     password: yup
         .string()
-        .required(),
+        .required("need a password"),
         
     service: yup
         .boolean()
-        .required()
+        .required("ya gotta"),
 });
 
 export default formSchema;
