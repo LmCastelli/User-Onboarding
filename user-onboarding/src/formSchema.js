@@ -18,10 +18,9 @@ const formSchema = yup.object().shape({
     password: yup
         .string()
         .required("need a password"),
-        
     service: yup
         .boolean()
-        .required("ya gotta"),
+        .oneOf([true], "Need to agree")
 });
 
 export default formSchema;

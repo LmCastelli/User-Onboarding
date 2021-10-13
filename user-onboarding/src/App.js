@@ -20,7 +20,7 @@ const initialFormErrors = {
   last_name: "",
   email: "", 
   password: "",
-  
+  service: ""
 }
 
 const userList = [

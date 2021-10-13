@@ -91,7 +91,6 @@ export default function Form(props) {
                         name="service"
                         onChange={onChange}
                         checked={values.service}
-                        value="service"
                     />
                 </label>
             </div>
