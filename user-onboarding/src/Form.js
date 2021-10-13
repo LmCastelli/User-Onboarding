@@ -23,9 +23,9 @@ export default function Form(props) {
 
     return (
         <form onSubmit={onSubmit}>
-            <h2>Hi</h2>
+            <h2>But does this work too?</h2>
 
-            <button disabled={disabled}>submit</button>
+            
 
             <div className="errorMessages">
                 <div>{errors.first_name}</div>
@@ -37,6 +37,9 @@ export default function Form(props) {
 
             <div>
                 <h2>Please enter your information</h2>
+
+                <button disabled={disabled}>submit</button>
+                <br/>
 
                 <label>First Name
                     <input 
