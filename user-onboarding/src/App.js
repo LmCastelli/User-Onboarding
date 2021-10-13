@@ -23,9 +23,7 @@ const initialFormErrors = {
   service: ""
 }
 
-const userList = [
-  {first_name: "bob", last_name: "bobby", email: "bob@bob.com", password: "no way", service: true}
-];
+const userList = [];
 const initialDisabled = true;
 
 function App() {
