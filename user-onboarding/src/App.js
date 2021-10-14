@@ -20,12 +20,10 @@ const initialFormErrors = {
   last_name: "",
   email: "", 
   password: "",
-  
+  service: ""
 }
 
-const userList = [
-  {first_name: "bob", last_name: "bobby", email: "bob@bob.com", password: "no way", service: true}
-];
+const userList = [];
 const initialDisabled = true;
 
 function App() {
@@ -85,7 +83,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hey y'all</h1>
+      <h1>Do it work</h1>
 
       <Form 
         values={formValues}
@@ -95,6 +93,7 @@ function App() {
         errors={formErrors}
       />
       
+      <h2>List of Users!</h2>
       {
         users.map(user => {
           return (
